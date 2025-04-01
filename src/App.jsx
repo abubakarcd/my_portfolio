@@ -1,12 +1,11 @@
 import Portfolio from './portfolio'
-
+import "./index.css"
 
 function App() {
   
 
   return (
     <>
-     <p>hello</p>
      <Portfolio/>
     </>
   )
