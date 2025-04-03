@@ -1,40 +1,62 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
-
-const navLinks = ["Home", "About", "Projects", "Contact"];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navItems = [
+    { title: "Home", href: "#home" },
+    { title: "About", href: "#about" },
+    { title: "Projects", href: "#projects" },
+    { title: "Certificates", href: "#certificates" },
+    { title: "Education", href: "#education" },
+    { title: "Contact", href: "#contact" },
+  ];
 
   return (
-    <nav className="p-4 bg-gray-900 text-white flex justify-between md:justify-around md:h-20 lg:h-38 md:text-2xl lg:text-4xl items-center w-full  top-0 left-0 right-0 z-30 ">
-      <div className="text-xl lg:text-4xl md:text-2xl font-bold">My Portfolio</div>
-      <div className="hidden md:flex md:space-x-5 lg:space-x-11">
-        {navLinks.map((link) => (
-          <a key={link} href={`#${link.toLowerCase()}`} className="hover:text-yellow-400 active:text-blue-500 whitespace-nowrap">
-            {link}
-          </a>
-        ))}
-      </div>
-      <div className="md:hidden">
-        <button onClick={() => setIsOpen(!isOpen)} variant="ghost">
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </div>
-      {isOpen && (
-        <div className="absolute top-16 right-2 left-2 w-full max-w-xs bg-gray-800 p-4 rounded-md md:hidden flex flex-col space-y-4 overflow-x-hidden">
-          {navLinks.map((link) => (
-            <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
-              className="hover:text-yellow-400 active:text-blue-500"
-              onClick={() => setIsOpen(false)}
+    <nav className="bg-[#161616] text-[#EAEAEA] top-0 w-full shadow-md border-b border-[#FFD700] z-50">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex justify-between h-16 items-center">
+        
+        {/* Logo / Brand Name */}
+        <div className="text-2xl font-bold text-[#FFD700]">Abubakar</div>
+
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex space-x-6">
+          {navItems.map((item) => (
+            <a 
+              key={item.title} 
+              href={item.href}
+              className="px-4 py-2 text-lg font-semibold transition-all duration-300 hover:text-[#FFD700] hover:scale-110 active:text-[#FFA500]"
             >
-              {link}
+              {item.title}
             </a>
           ))}
         </div>
-      )}
-    </nav>
+
+        {/* Mobile Menu Button */}
+        <button 
+          onClick={() => setIsOpen(!isOpen)}
+          className="lg:hidden text-[#FFD700] focus:outline-none text-3xl"
+        >
+          {isOpen ? "✖" : "☰"}
+        </button>
+      </div>
+    </div>
+
+    {/* Mobile Menu */}
+    {isOpen && (
+      <div className="lg:hidden bg-[#1E1E1E] border-t border-[#FFD700] flex flex-col items-center">
+        {navItems.map((item) => (
+          <a 
+            key={item.title} 
+            href={item.href} 
+            className="w-full text-center py-3 text-lg font-semibold border-b border-[#FFD700] hover:text-[#FFD700] active:text-[#FFA500]" 
+            onClick={() => setIsOpen(false)}
+          >
+            {item.title}
+          </a>
+        ))}
+      </div>
+    )}
+  </nav>
   );
 }
