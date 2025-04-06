@@ -4,34 +4,43 @@ import { Award, Book, GraduationCap } from "lucide-react"; // Import icons from 
 const EducationSection = () => {
   const educationData = [
     {
-      title: "Bachelor of Science in Computer Science",
-      institution: "XYZ University",
-      date: "2018 - 2022",
-      description: "A four-year program focusing on software development, algorithms, and computer systems.",
-      details: "Graduated with Honors. Focused on Full Stack Web Development and Software Engineering.",
+      title: "Dars-e-Nizami",
+      institution: "Jamia Ashrafia ",
+      date: "2024-Present",
+      description: "A multi-year program focused on classical Arabic, Islamic jurisprudence, and traditional Islamic sciences.",
+      details: "Studying classical Arabic, logic, Fiqh, and other core Islamic sciences with a focus on deep textual understanding and traditional scholarship.",
       icon: <GraduationCap className="w-6 h-6 text-[#FFD700]" />, // Using the GraduationCap icon
     },
     {
       title: "Web Development Certification",
       institution: "Udemy",
-      date: "2023",
+      date: "2024",
       description: "An intensive course covering HTML, CSS, JavaScript, React, and Node.js.",
       details: "Completed 200+ hours of coursework and built several projects including a portfolio website and e-commerce app.",
       icon: <Book className="w-6 h-6 text-[#FFD700]" />, // Using the Book icon
     },
     {
-      title: "React Developer Bootcamp",
-      institution: "Coursera",
-      date: "2024",
-      description: "A comprehensive bootcamp focused on mastering React, Redux, and modern front-end development.",
-      details: "Built multiple React apps, including a task manager and an interactive map app.",
-      icon: <Award className="w-6 h-6 text-[#FFD700]" />, // Using the Award icon
+      title: "Intermediate",
+      institution: "Government College University, Lahore",
+      date: "2021-2023",
+      description: "Completed coursework in core scientific subjects, building critical thinking and analytical skills for further academic pursuits.",
+      details: "",
+      icon: <GraduationCap className="w-6 h-6 text-[#FFD700]" />
+
+    },  {
+      title: "Matriculation",
+      institution: "The Punjab School",
+      date: "2019-2021",
+      description: "Completed coursework in core scientific subjects, honing analytical skills and preparing for further academic challenges.",
+      details: "",
+      icon: <GraduationCap className="w-6 h-6 text-[#FFD700]" />
+
     },
     // Add more education data as needed
   ];
 
   return (
-    <div className="py-10 px-5 lg:px-20 bg-gray-800 text-white">
+    <section id="education" className="py-10 px-5 lg:px-20 bg-gray-800 text-white">
       <h2 className="text-4xl text-center font-semibold text-[#FFD700] mb-10">
         My Education
       </h2>
@@ -57,7 +66,7 @@ const EducationSection = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

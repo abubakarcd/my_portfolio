@@ -19,7 +19,7 @@ function Portfolio(){
   <h1 className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] text-transparent bg-clip-text 
     p-6 rounded-lg text-4xl md:text-5xl lg:text-7xl xl:text-8xl 
     shadow-[0px_0px_15px_#FFD700] animate__animated animate__fadeIn animate__delay-0.7s">
-    I'm Muhammad Abubakar.<br /> A Full Stack Website Developer.
+    Hi! I'm Muhammad Abubakar.<br /> A Full Stack Website Developer.
   </h1>
 </section>
 
@@ -27,7 +27,11 @@ function Portfolio(){
         {/* Summary Section */}
         <section id="about" className="bg-[#1E1E1E] p-6 rounded-lg shadow-lg border-l-4 border-[#FFD700]">
           <h2 className="text-3xl font-semibold text-[#FFD700]">Summary</h2>
-          <p className="text-[#EAEAEA]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem doloribus earum minima odit. Veritatis, aperiam. Possimus consequatur impedit explicabo vitae. Nobis dolorum magnam laborum vitae earum tenetur ipsa explicabo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, id numquam ex incidunt vel eos! Neque laboriosam tempore officiis itaque distinctio dolores possimus! Fugiat tempore, quibusdam porro est eligendi similique. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit doloremque delectus, voluptas aut aliquam eveniet magni dignissimos, perferendis ea, sequi cupiditate saepe? Assumenda sit animi commodi illum dolores quos provident?</p>
+          <p className="text-[#EAEAEA]">I’m a full stack web developer with around 6 months of hands-on experience building web applications. I started with Dr. Angela Yu’s full stack course and have been learning by building real projects ever since. I enjoy the process of solving problems, writing clean code, and creating websites that actually work and feel good to use.<br></br><br></br>
+
+My main tools are React, JavaScript, Tailwind CSS, Node.js, Express, and PostgreSQL. I’ve also worked with MySQL, jQuery, and EJS when needed. Recently, I’ve been exploring SaaS-style apps and focusing more on building things that are fast, simple, and easy to use, especially on mobile.
+            
+          </p>
         </section>
   
         {/* Projects Section */}
