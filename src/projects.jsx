@@ -16,82 +16,86 @@ const Projects = () => {
   // Sample project data with description
   const projects = [
     {
-      title: "Project 1",
-      image: resumify, // Ensure to use correct image path
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Example video URL
+      title: "Resumify",
+      image: resumify,
+      videoUrl: "https://www.youtube.com/embed/bTmN7IRgtSs",
       description:
-        "This project is a full-stack web application that allows users to track their tasks and manage to-do lists.",
-      technologies: "React, Node.js, MongoDB, Express",
+        "A powerful tool designed to help users create professional resumes quickly and easily",
+      technologies: "React, Node.js, PostgreSQL, Express, JavaScript",
     },
     {
-      title: "Project 2",
+      title: "Book Review Project",
       image: bookreview,
-      videoUrl: "https://www.youtube.com/embed/tgbNymZ7vqY",
+      videoUrl: "https://www.youtube.com/embed/SAl7vjfZwGk",
       description:
-        "An e-commerce website built with React and Stripe for online payments.",
-      technologies: "React, Stripe, Node.js, MongoDB",
+        "Book Review is a website where you can submit a review about books and also read other people reviews about a particular book.",
+      technologies: "EJS, Node.js, PostgreSQL, Express, JavaScript",
     },
     {
-      title: "Project 3",
+      title: "OpenD Marketplace",
       image: opned,
-      videoUrl: "https://www.youtube.com/embed/vbJ6zSoZcLg",
+      videoUrl: "https://www.youtube.com/embed/sbM3MWoPqpo",
       description:
-        "A portfolio website to showcase my web development skills and projects.",
-      technologies: "HTML, CSS, JavaScript, React",
-    }, {
-      title: "Project 3",
-      image: crypto,
-      videoUrl: "https://www.youtube.com/embed/vbJ6zSoZcLg",
-      description:
-        "A portfolio website to showcase my web development skills and projects.",
-      technologies: "HTML, CSS, JavaScript, React",
-    }, {
-      title: "Project 3",
-      image: keeper,
-      videoUrl: "https://www.youtube.com/embed/vbJ6zSoZcLg",
-      description:
-        "A portfolio website to showcase my web development skills and projects.",
-      technologies: "HTML, CSS, JavaScript, React",
-    }, {
-      title: "Project 3",
-      image: travel,
-      videoUrl: "https://www.youtube.com/embed/vbJ6zSoZcLg",
-      description:
-        "A portfolio website to showcase my web development skills and projects.",
-      technologies: "HTML, CSS, JavaScript, React",
-    }, {
-      title: "Project 3",
-      image: iplocator,
-      videoUrl: "https://www.youtube.com/embed/vbJ6zSoZcLg",
-      description:
-        "A portfolio website to showcase my web development skills and projects.",
-      technologies: "HTML, CSS, JavaScript, React",
-    }, {
-      title: "Project 3",
-      image: blog,
-      videoUrl: "https://www.youtube.com/embed/vbJ6zSoZcLg",
-      description:
-        "A portfolio website to showcase my web development skills and projects.",
-      technologies: "HTML, CSS, JavaScript, React",
-    }, {
-      title: "Project 3",
-      image: qr,
-      videoUrl: "https://www.youtube.com/embed/vbJ6zSoZcLg",
-      description:
-        "A portfolio website to showcase my web development skills and projects.",
-      technologies: "HTML, CSS, JavaScript, React",
+        "OpenD is a NFT Marketplace prpject where you can buy and sell NFT's",
+      technologies: "React, Node.js, PostgreSQL, Express, JavaScript, Motoko, ICP",
     },
     {
-      title: "Project 3",
-      image: simon,
-      videoUrl: "https://www.youtube.com/embed/vbJ6zSoZcLg",
+      title: "DUBA-Crypto Token",
+      image: crypto,
+      videoUrl: "https://www.youtube.com/embed/h8bBixzy6Ag",
       description:
-        "A portfolio website to showcase my web development skills and projects.",
-      technologies: "HTML, CSS, JavaScript, React",
+        "DUBA or DANG is a crypto token. Users can also buy and transfer this token to each other.",
+      technologies: "React, Node.js, PostgreSQL, Express, JavaScript, Motoko,ICP",
     },
-    // Add more projects as needed
+    {
+      title: "Keeper App project",
+      image: keeper,
+      videoUrl: "https://www.youtube.com/embed/iX6is3TFhOU",
+      description:
+        "Keeper is a react base project which allows you to write your notes , inspired from google notes. Users can write their notes and also delete them.",
+      technologies: "React, HTML, CSS, JavaScript",
+    },
+    {
+      title: "Travel Tracker Project",
+      image: travel,
+      videoUrl: "https://www.youtube.com/embed/t3pC14GUnNw",
+      description:
+        "Travel tracker is a website which allows you to store the places that you have visited and also show them on world map.",
+      technologies: "EJS, Node.js, PostgreSQL, Express, JavaScript",
+    },
+    {
+      title: "IP Locator Project",
+      image: iplocator,
+      videoUrl: "https://www.youtube.com/embed/EYDbcljWJRQ",
+      description:
+        "IP Locator is a website which allows you to locate your location on the basis of IP Address.",
+      technologies: "HTML, CSS, JavaScript, Node, Express",
+    },
+    {
+      title: "Blogging Website",
+      image: blog,
+      videoUrl: "https://www.youtube.com/embed/OVoUsHF3inw",
+      description:
+        "It is blogging website where people can write, edit , view and delete blogs. It is a useful website for bloggers and for those who loves to read.",
+      technologies: "HTML, CSS, JavaScript, EJS, Node.js, PostgreSQL, Express",
+    },
+    {
+      title: "QR code Generator",
+      image: qr,
+      videoUrl: "https://www.youtube.com/embed/OnBA6YiyYK8",
+      description:
+        "QR Generator is a website that actually generates QR code based on the Link that user have provided.",
+      technologies: "HTML, CSS, JavaScript, Node",
+    },
+    {
+      title: "Simon Game ",
+      image: simon,
+      videoUrl: "https://www.youtube.com/embed/yrxlo6Wdulw",
+      description:
+        "Simon game project is acutally a game where user will have to remember the colors and then click on them in order. If order changes the game will over.",
+      technologies: "HTML, CSS, JavaScript",
+    },
   ];
-
   const [activeVideo, setActiveVideo] = useState(null);
   const [expandedIndex, setExpandedIndex] = useState(null);
 

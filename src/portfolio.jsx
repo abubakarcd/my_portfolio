@@ -5,6 +5,7 @@ import Projects from "./projects";
 import CertificateSection from "./certificate";
 import EducationSection from "./education";
 import ContactSection from "./contact";
+import Skills from "./skill";
 
 function Portfolio(){
     return(
@@ -33,7 +34,7 @@ My main tools are React, JavaScript, Tailwind CSS, Node.js, Express, and Postgre
             
           </p>
         </section>
-  
+        <Skills/>
         {/* Projects Section */}
         <Projects/>
   

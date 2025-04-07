@@ -6,7 +6,7 @@ const EducationSection = () => {
     {
       title: "Dars-e-Nizami",
       institution: "Jamia Ashrafia ",
-      date: "2024-Present",
+      date: "2025-Present",
       description: "A multi-year program focused on classical Arabic, Islamic jurisprudence, and traditional Islamic sciences.",
       details: "Studying classical Arabic, logic, Fiqh, and other core Islamic sciences with a focus on deep textual understanding and traditional scholarship.",
       icon: <GraduationCap className="w-6 h-6 text-[#FFD700]" />, // Using the GraduationCap icon
